@@ -7,4 +7,4 @@ RUN apt-get update && apt-get -y --no-install-recommends install \
     gdb \
     wget
     RUN g++ main.cpp -o hello
-    ENTERYPOINT ["./hello"]
+    ENTRYPOINT ["./hello"]
