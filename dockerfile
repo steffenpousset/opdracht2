@@ -6,5 +6,5 @@ RUN apt-get update && apt-get -y --no-install-recommends install \
     cmake \
     gdb \
     wget
-    RUN g++ main.cpp -o hello
+    RUN gcc main.c -o hello
     ENTRYPOINT ["./hello"]
