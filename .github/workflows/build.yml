@@ -10,3 +10,9 @@ jobs:
           - uses: actions/checkout@v3
           - name: build and push docker images
             uses: docker/build-push-action@v3.2.0
+            with:
+                username: steffenpousset
+                password: ${{ secrets.GITHUB_TOKEN }}
+                registry: docker.pkg.github.com
+                repository: steffenpousset/opdracht2
+                tag_with_sha: true
